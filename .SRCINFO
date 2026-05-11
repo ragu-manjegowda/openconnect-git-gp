@@ -1,0 +1,34 @@
+pkgbase = openconnect-gp-git
+	pkgdesc = Open client for Cisco AnyConnect VPN with patched upstream GlobalProtect support
+	pkgver = a7e751442e0e4bb8e3f18965960b1428e1a26bbc
+	pkgrel = 1
+	url = https://www.infradead.org/openconnect.html
+	arch = i686
+	arch = x86_64
+	license = LGPL2.1
+	makedepends = intltool
+	makedepends = python
+	makedepends = git
+	makedepends = autoconf
+	makedepends = automake
+	makedepends = libtool
+	depends = libproxy
+	depends = vpnc
+	depends = pcsclite
+	depends = trousers
+	depends = stoken
+	depends = oath-toolkit
+	provides = openconnect
+	provides = libopenconnect.so
+	conflicts = openconnect
+	options = !emptydirs
+	source = openconnect-gp-git::git+https://gitlab.com/openconnect/openconnect.git/#commit=a7e751442e0e4bb8e3f18965960b1428e1a26bbc
+	source = gp-cas-callback.patch
+	source = gp_browser_helper.c
+	source = gp_browser_helper.desktop
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+
+pkgname = openconnect-gp-git
