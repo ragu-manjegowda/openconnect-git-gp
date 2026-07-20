@@ -1,7 +1,8 @@
 # Maintainer: Ragu Manjegowda <github.com/ragu-manjegowda>
+PACKAGER="Ragu Manjegowda <ragu.manjegowda@gmail.com>"
 pkgname=openconnect-gp-git
 _pkgname=openconnect
-pkgver=9c136a20d1a140dee70ba0831681818188e1c9a5
+pkgver=70d1e79d1e55849dfc71dcc199b1edb535b547e4
 pkgrel=1
 pkgdesc="Open client for Cisco AnyConnect VPN with patched upstream GlobalProtect support"
 arch=('i686' 'x86_64')
@@ -12,7 +13,7 @@ makedepends=('intltool' 'python' 'git' 'autoconf' 'automake' 'libtool')
 options=('!emptydirs' '!debug')
 provides=($_pkgname 'libopenconnect.so')
 conflicts=($_pkgname)
-commit=9c136a20d1a140dee70ba0831681818188e1c9a5
+commit=70d1e79d1e55849dfc71dcc199b1edb535b547e4
 source=("$pkgname::git+https://gitlab.com/openconnect/openconnect.git/#commit=$commit"
         "gp-cas-callback.patch"
         "gp_browser_helper.c"

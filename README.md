@@ -29,6 +29,26 @@ To rebuild without installing:
 makepkg -sf
 ```
 
+## Use With Paru
+
+Add this GitHub repository to `~/.config/paru/paru.conf`:
+
+```ini
+[openconnect-github]
+Url = https://github.com/ragu-manjegowda/openconnect-git-gp.git
+GenerateSrcinfo
+```
+
+Refresh the PKGBUILD repository and install the package:
+
+```bash
+paru -Sy --pkgbuilds
+paru -S --pkgbuilds openconnect-gp-git
+```
+
+Paru gives configured PKGBUILD repositories priority over packages with the
+same name in the AUR.
+
 ## Files
 
 - `PKGBUILD`: Arch package build definition.
