@@ -1,7 +1,7 @@
 pkgbase = openconnect-gp-git
 	pkgdesc = Open client for Cisco AnyConnect VPN with patched upstream GlobalProtect support
 	pkgver = 70d1e79d1e55849dfc71dcc199b1edb535b547e4
-	pkgrel = 1
+	pkgrel = 2
 	url = https://www.infradead.org/openconnect.html
 	arch = i686
 	arch = x86_64
@@ -15,7 +15,6 @@ pkgbase = openconnect-gp-git
 	depends = libproxy
 	depends = vpnc
 	depends = pcsclite
-	depends = trousers
 	depends = stoken
 	depends = oath-toolkit
 	provides = openconnect
